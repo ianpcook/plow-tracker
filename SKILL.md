@@ -4,8 +4,7 @@ description: Track Pittsburgh snow plows in real-time. Check plow locations, see
 version: 1.0.0
 homepage: https://pittsburghpa.gov/dpw/snow-plow-tracker
 metadata:
-  clawdbot:
-    emoji: 🚛
+  emoji: 🚛
   tags:
     - pittsburgh
     - local

@@ -4,7 +4,7 @@
 
 Yinz ever sit there wonderin' if the city's gonna plow your street or if you're just gonna be stuck in the house all day? Well, quit your jaggerin' around and use this here skill to see where them plows are at!
 
-An [Agent Skill](https://skills.sh) — works with Claude Code, Clawdbot, Cursor, Windsurf, Cline, and any agent that supports the open skills format.
+An [Agent Skill](https://skills.sh) — works with Claude Code, Cursor, Windsurf, Cline, Goose, and any agent that supports the open skills format.
 
 This skill pulls live data from the City of Pittsburgh's Snow Response Dashboard so you can see:
 
