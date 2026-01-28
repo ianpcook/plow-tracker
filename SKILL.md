@@ -1,5 +1,5 @@
 ---
-name: snowplow
+name: plow-tracker
 description: Track Pittsburgh snow plows in real-time. Check plow locations, see which streets have been plowed, and monitor snow response activity. Uses live data from the City of Pittsburgh's Snow Response Dashboard.
 version: 1.0.0
 homepage: https://pittsburghpa.gov/dpw/snow-plow-tracker
@@ -23,26 +23,26 @@ Track snow plow locations and check if your street has been plowed. Uses live da
 
 ```bash
 # List all plow vehicles and their current status
-<skill>/snowplow.py status
+<skill>/plow-tracker.py status
 
 # Show only active/moving plows
-<skill>/snowplow.py status --active
+<skill>/plow-tracker.py status --active
 
 # Find plows near a location
-<skill>/snowplow.py near "Squirrel Hill"
-<skill>/snowplow.py near "15213"
-<skill>/snowplow.py near "4400 Forbes Ave, Pittsburgh"
+<skill>/plow-tracker.py near "Squirrel Hill"
+<skill>/plow-tracker.py near "15213"
+<skill>/plow-tracker.py near "4400 Forbes Ave, Pittsburgh"
 
 # Check if a street/address has been plowed recently
-<skill>/snowplow.py check "123 Main St, Pittsburgh 15213"
-<skill>/snowplow.py check "Forbes Ave and Murray Ave"
+<skill>/plow-tracker.py check "123 Main St, Pittsburgh 15213"
+<skill>/plow-tracker.py check "Forbes Ave and Murray Ave"
 
 # Check plowing activity in a time window
-<skill>/snowplow.py check "123 Main St" --hours 6
+<skill>/plow-tracker.py check "123 Main St" --hours 6
 
 # Show route history for a specific plow
-<skill>/snowplow.py history PW-110
-<skill>/snowplow.py history PW-110 --hours 3
+<skill>/plow-tracker.py history PW-110
+<skill>/plow-tracker.py history PW-110 --hours 3
 ```
 
 ## Commands
@@ -103,26 +103,26 @@ Optionally set a default address in your workspace `TOOLS.md`:
 Default address: 123 Main St, Pittsburgh, PA 15213
 ```
 
-Then `snowplow.py check` with no argument uses the default.
+Then `plow-tracker.py check` with no argument uses the default.
 
 ## Example Queries
 
 **"Are the plows out right now?"**
 ```bash
-snowplow.py status --active
+plow-tracker.py status --active
 ```
 
 **"Has my street been plowed?"**
 ```bash
-snowplow.py check "2345 Murray Ave, Pittsburgh 15217"
+plow-tracker.py check "2345 Murray Ave, Pittsburgh 15217"
 ```
 
 **"Where are the plows near downtown?"**
 ```bash
-snowplow.py near "Downtown Pittsburgh" --radius 1
+plow-tracker.py near "Downtown Pittsburgh" --radius 1
 ```
 
 **"What has plow PW-115 been doing?"**
 ```bash
-snowplow.py history PW-115 --hours 4
+plow-tracker.py history PW-115 --hours 4
 ```
