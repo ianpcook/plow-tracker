@@ -4,7 +4,9 @@
 
 Yinz ever sit there wonderin' if the city's gonna plow your street or if you're just gonna be stuck in the house all day? Well, quit your jaggerin' around and use this here skill to see where them plows are at!
 
-This agent skill pulls live data from the City of Pittsburgh's Snow Response Dashboard so you can see:
+An [Agent Skill](https://skills.sh) — works with Claude Code, Clawdbot, Cursor, Windsurf, Cline, and any agent that supports the open skills format.
+
+This skill pulls live data from the City of Pittsburgh's Snow Response Dashboard so you can see:
 
 - 🚛 Where all the plows are right now
 - 🟢 Which ones are actually movin' (not just sittin' dahntahn)
@@ -23,28 +25,9 @@ This agent skill pulls live data from the City of Pittsburgh's Snow Response Das
 
 ## Installation
 
-### For Clawdbot Users
-
-Drop this in your skills folder:
-
 ```bash
-cd ~/clawd/skills
-git clone https://github.com/ianpcook/plow-tracker.git
+npx skills add ianpcook/plow-tracker
 ```
-
-Then add the skills path to your config if yinz haven't already:
-
-```json
-{
-  "skills": {
-    "load": {
-      "extraDirs": ["/path/to/your/skills"]
-    }
-  }
-}
-```
-
-Restart your gateway and yinz are good to go!
 
 ### Standalone
 
@@ -72,6 +55,11 @@ python3 plow-tracker.py check "Forbes Ave and Murray Ave"
 ## Data Source
 
 All data comes from the City of Pittsburgh's ArcGIS services. We're just makin' it easier to see without goin' dahntahn to check yourself.
+
+## Links
+
+- [City of Pittsburgh Snow Response](https://pittsburghpa.gov/dpw/snow-plow-tracker)
+- [skills.sh](https://skills.sh) — The open agent skills ecosystem
 
 ---
 
