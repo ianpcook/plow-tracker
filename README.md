@@ -4,7 +4,7 @@
 
 Yinz ever sit there wonderin' if the city's gonna plow your street or if you're just gonna be stuck in the house all day? Well, quit your jaggerin' around and use this here skill to see where them plows are at!
 
-This Clawdbot skill pulls live data from the City of Pittsburgh's Snow Response Dashboard so you can see:
+This agent skill pulls live data from the City of Pittsburgh's Snow Response Dashboard so you can see:
 
 - 🚛 Where all the plows are right now
 - 🟢 Which ones are actually movin' (not just sittin' dahntahn)
